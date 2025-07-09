@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es-CL">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="grupo 1">
+    <meta name="project" content="modulo 3 - ae3 grupal - gestión de clientes">
+    <meta name="description" content="Actividad grupal evaluada del bootcamp Full Stack Javascript con Skillnest: gestión de clientes es un ejercicio pequeño sobre uso de objetos y arreglos.">
+    <meta name="keywords" content="javascript, objetos literales, arreglos, métodos, gestión de clientes">
+    <link rel="shortcut icon" href="favicon.svg" type="image/svg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    <script defer src="./assets/js/main.js"></script>
+    <title>GesPipol</title>
+  </head>
+
+  <body>
+    <main>
+      <hgroup>
+        <h1>Contexto</h1>
+        <p>El equipo ha sido asignado para desarrollar una parte de una aplicación de gestión de clientes para una empresa. El objetivo es utilizar arreglos y objetos para almacenar y gestionar la información de los clientes. El sistema debe permitir agregar, editar, eliminar y consultar datos de los clientes, al mismo tiempo que permite realizar operaciones con sus datos de manera eficiente utilizando arreglos y ciclos. En este ejercicio grupal, cada miembro del equipo será responsable de una parte del desarrollo, trabajando en conjunto para implementar el sistema de gestión de clientes. Las tareas incluyen el uso de objetos, arreglos, ciclos y buenas prácticas de programación.</p>
+      </hgroup>
+      <section class="requerimientos">
+        <h2>Requisitos</h2>
+        <ol>
+          <li class="item"> Definir un objeto cliente: Crear una estructura de objeto cliente con las siguientes propiedades: 
+            <ul>
+              <li class="sub-item">id (número)</li>
+              <li class="sub-item">nombre (string)</li>
+              <li class="sub-item">apellido (string)</li>
+              <li class="sub-item">email (string)</li>
+              <li class="sub-item">telefono (string)</li>
+              <li class="sub-item">activo (booleano: true O false)</li>
+            </ul>
+          </li>
+          <li class="item"> Crear un arreglo de objetos cliente: 
+            <ul>
+              <li class="sub-item">Crear un arreglo vacío donde se almacenarán los objetos cliente.</li>
+              <li class="sub-item">Definir al menos 3 objetos cliente dentro de este arreglo, cada uno con diferentes datos.</li>
+            </ul>
+          </li>
+          <li class="item"> Acceder a la información de un cliente: 
+            <ul>
+              <li class="sub-item">Usar un ciclo for para iterar sobre el arreglo de clientes y mostrar los datos de cada cliente (nombre, apellido, email, teléfono).</li>
+            </ul>
+          </li>
+          <li class="item"> Contar la cantidad de clientes activos: 
+            <ul>
+              <li class="sub-item">Utilizar un ciclo for o forEach para contar cuántos clientes tienen el valor activo igual a true.</li>
+            </ul>
+          </li>
+          <li class="item"> Agregar un nuevo cliente: 
+            <ul>
+              <li class="sub-item">Crear una función que reciba los datos de un nuevo cliente y 10 agregue al arreglo utilizando el método push().</li>
+            </ul>
+          </li>
+          <li class="item"> Eliminar un cliente: 
+            <ul>
+              <li class="sub-item">Crear una función que elimine un cliente por su id utilizando el método splice() para eliminar el objeto del arreglo.</li>
+              <li class="sub-item">Asegúrese de que, al eliminar el cliente, el arreglo se actualice correctamente.</li>
+            </ul>
+          </li>
+          <li class="item"> Modificar los datos de un cliente: 
+            <ul>
+              <li class="sub-item">Crear una función que modifique los datos de un cliente existente en el arreglo, por ejemplo, cambiar el teléfono o el estado de activo de false a true.</li>
+            </ul>
+          </li>
+          <li class="item"> Consultar los clientes inactivos: 
+            <ul>
+              <li class="sub-item">Usar el método filter() para crear un nuevo arreglo con los clientes que tienen el campo activo igual a false.</li>
+            </ul>
+          </li>
+          <li class="item"> Ålgebra con arreglos y objetos: 
+            <ul>
+              <li class="sub-item">Crear una función que reciba dos arreglos de clientes (por ejemplo, uno con clientes nuevos y Otro con clientes existentes) y realice una uni6n de ambos, agregando los nuevos clientes al arreglo original.</li>
+              <li class="sub-item">Crear Otra función para filtrar clientes duplicados (con el mismo id), mostrando solo los clientes únicos.</li>
+            </ul>
+          </li>
+          <li class="item"> Ciclos while, for y forEach 
+            <ul>
+              <li class="sub-item">Usar un ciclo while para simular una operación repetitiva en el sistema, por ejemplo, consultar los datos de un cliente hasta que se ingrese un id válido.</li>
+              <li class="sub-item">Usar for o forEach para realizar una consulta masiva de todos los clientes, mostrando los datos solo de aquellos que están activos.</li>
+            </ul>
+          </li>
+          <li class="item"> Combinación de ciclos con if/else 
+            <ul>
+              <li class="sub-item">Crear una condici6n dentro de un ciclo que determine si un cliente es activo o inactivo, y mostrar un mensaje diferente dependiendo de su estado.</li>
+            </ul>
+          </li>
+          <li class="item"> C6digo limpio y buenas prácticas: 
+            <ul>
+              <li class="sub-item">Asegúrese de que el código sea limpio, modular y fácil de entender. Utilicen convenciones claras para nombrar las variables, funciones y objetos.</li>
+              <li class="sub-item">Cada miembro del equipo debe documentar su código con comentarios explicativos sobre qué hace cada parte.</li>
+            </ul>
+          </li>
+        </ol>
+      </section>
+    </main>
+    <aside><button>Simular</button></aside>
+  </body>
+
+</html>
