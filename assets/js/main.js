@@ -224,7 +224,9 @@ function filterUniqueClients() {
 
   return iUnicos.map(index => clientes[index]);
 }
-filterUniqueClients();
+const uniques = filterUniqueClients();
+console.log("Los clientes con id único son:");
+console.table(uniques)
 
 // ✔️PUNTO 10.1 Usa while para simular que se solicita la información de un
 // cliente por su id, repitiendo el proceso mientras id no exista.
