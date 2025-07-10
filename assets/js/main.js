@@ -145,11 +145,13 @@ function modificarCliente(objTmpCliente) {
 }
 
 console.log("Ejemplo hardcodeado para ilustra uso: ", clientes[0]);   // id 101
-modificarCliente({id: 101, nombre: 'Calcetín con rombos', apellido: 'man'});
+let modify = modificarCliente({id: 101, nombre: 'Calcetín con rombos', apellido: 'man'});
+console.log(modify);
 console.log("Nuevos valores, mismo objeto: ", clientes[0]);
 
 console.log("Ejemplo hardcodeado para ilustra uso: id inexistente");
-modificarCliente({id: 150, nombre: 'Pedrito'});
+modify = modificarCliente({id: 150, nombre: 'Pedrito'});
+console.log(modify);
 
 // ✔️PUNTO 8. Consultar clientes: usar filter para crear un nuevo arreglo
 // con los clientes que tienen el campo "activo" con valor "false";
